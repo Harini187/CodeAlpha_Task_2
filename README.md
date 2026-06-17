@@ -20,11 +20,10 @@ The project follows a standard machine learning methodology:
 Data Loading: The Breast Cancer Wisconsin dataset is loaded.
 Initial Data Exploration: Basic checks are performed to understand the dataset's structure, data types, and confirm the absence of missing values.
 
-## Data Preprocessing
-The dataset is split into training (80%) and testing (20%) sets using train_test_split, with stratification to maintain class proportions.
+Data Preprocessing: The dataset is split into training (80%) and testing (20%) sets using train_test_split, with stratification to maintain class proportions.
 Numerical features are scaled using StandardScaler to normalize their range, applied after the split to prevent data leakage.
 
-## Model Training & Evaluation
+Model Training & Evaluation
 Logistic Regression: A LogisticRegression model is trained on the scaled training data.
 Random Forest Classifier: A RandomForestClassifier is trained on the scaled training data.
 Both models are evaluated using accuracy_score, classification_report, and confusion_matrix on the test set.
